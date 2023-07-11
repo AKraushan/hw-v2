@@ -1,0 +1,30 @@
+.mdc-list-item__primary-text{
+    font-weight: 500
+}
+.item-list{
+    padding-left: 20px;
+&span{
+    font-weight: 500
+}
+     
+    .mat-icon{
+        margin-bottom: -5px;
+    }
+    &.active{
+        background-color:#e7f5ad;
+        position: relative;
+        &::before{
+            content: "";
+        width: 7px;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        background-color: #6fc300;
+        
+        }
+        .mat-icon{
+            color: #6fc300;
+         }
+    }
+}
+

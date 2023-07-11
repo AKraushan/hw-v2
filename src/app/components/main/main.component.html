@@ -1,0 +1,25 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened  #drawer class="border-end-0">
+        <app-sidebar></app-sidebar>
+    </mat-drawer>
+    
+    <mat-drawer-content>
+        
+        <div class="content-wrapper">
+            
+            <app-header (notify)="drawer.toggle()"></app-header>
+            <div class="body-content p-3">
+                <router-outlet></router-outlet>
+            </div>
+            <app-footer></app-footer>
+        </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+
+
+
+
+
+
+
+
